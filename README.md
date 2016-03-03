@@ -9,25 +9,28 @@
 首先，克隆项目
 
 ```
-[root@oneday-dev0 fis-receiver]# git clone https://github.com/chyingp/fis-receiver.git
+git clone https://github.com/chyingp/fis-receiver.git
 ```
 
 跟着，安装依赖
 
 ```
-[root@oneday-dev0 fis-receiver]# npm install
+cd fis-receiver/
+npm install
 ```
 
 然后，启动服务
 
 ```
-[root@oneday-dev0 fis-receiver]# npm start
+npm start
 
 > ex@0.0.0 start /data/web/fis-receiver
 > node ./bin/www
 ```
 
 ## 配置修改：fis-conf.js
+
+>以下内容参考 fis-receiver/examples 的例子
 
 在`fis-conf.js`中加入如下配置。其中：
 
@@ -49,7 +52,7 @@ fis.config.merge({
 启动远程部署。从打印的日志可以看到项目已经被部署到远程服务器。
 
 ```
-➜  examples git:(master) ✗ fis release -d remote
+fis release -d remote
 
  δ 7ms
 
