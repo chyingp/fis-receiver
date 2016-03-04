@@ -1,0 +1,22 @@
+{
+  "name"        : "fis-receiver",
+  "script"      : "./bin/www",
+  "cwd"         : "./",
+  "watch": [
+    "bin",
+    "routers"
+  ],
+  "ignore_watch" : [
+    "node_modules", 
+    "logs",
+    "public"
+  ],
+  "watch_options": {
+    "followSymlinks": false
+  },
+  "error_file" : "./logs/app-err.log",
+  "out_file"   : "./logs/app-out.log",
+  "env": {
+      "NODE_ENV": "production"
+  }
+}
